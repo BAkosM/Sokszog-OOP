@@ -62,7 +62,7 @@ public class Haromszog extends Sokszog{
         }
         return szerkeztheto;
     }
-
+    @Override
     public double getK() {
         return this.getA()+this.b+this.c;
     }
@@ -70,11 +70,12 @@ public class Haromszog extends Sokszog{
     private double getS() {
         return this.getK() /2;
     }
+    @Override
     public double getT() {
         return Math.sqrt(this.getS() * (this.getS() - this.getA()) * (this.getS() - this.b) * (this.getS() - this.c));
     }
     @Override
     public String toString() {
-        return String.format("Háromszög: a = %f - b = %f - c = %f - K = %f - T = %f", this.getA(), this.b,this.c,this.getK(),this.getT());
+        return String.format("Háromszög: a = %.3f - b = %.3f - c = %.3f - %s", this.getA(), this.b,this.c,super.toString());
     }
 }

@@ -4,5 +4,5 @@ public class Sokszog {
         this.a = a;
     }
     public double getA() {return a;}
-    public void setA(int a) {this.a = a;}
+    public void setA(Double a) {this.a = a;}
 }

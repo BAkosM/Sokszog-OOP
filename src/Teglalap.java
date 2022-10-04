@@ -21,4 +21,9 @@ public class Teglalap extends Sokszog {
     public double getT() {
         return this.getA()*this.b;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Téglalap: a = %f - b = %f - K = %f - T = %f", this.getA(), this.b,this.getK(),this.getT());
+    }
 }

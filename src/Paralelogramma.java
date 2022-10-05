@@ -54,6 +54,6 @@ public class Paralelogramma extends Sokszog {
     }
     @Override
     public String toString() {
-        return String.format("Paralelogtamma: a = %.3f - b = %.3f - alfa = %.3f fok - %s", this.getA(), this.b,this.alfa,super.toString());
+        return String.format("Paralelogramma: a = %.3f - b = %.3f - alfa = %.3f fok - %s", this.getA(), this.b,this.alfa,super.toString());
     }
 }
